@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
-import Nav from "@/components/navBar";
+
 import TypingEffect from "../components/typingEffect";
+import Wisdom from "@/components/wisdom";
 
 import AMM from "../img/AMM.png";
+import Maylinn from "../img/Maylinn1.jpg";
 
 export default function Home() {
     return (
@@ -17,8 +19,9 @@ export default function Home() {
                 />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
+
             <main>
-                <div className=' text-center mt-6 text-lg text-white     '>
+                <div className=' text-center mt-8 text-lg text-white     '>
                     <TypingEffect />
                 </div>
                 <h1 className=' text-4xl pt-4 text-center font-extrabold text-pink-300'>
@@ -26,13 +29,18 @@ export default function Home() {
                 </h1>
                 <section className=' text-center py-8 mx-4 text-white'>
                     <p>
-                        Vi ønsker deg en minnerik og flott konfirmasjonsdag.
-                        Gode ønsker for framtiden med masse hell og lykke. Du er
-                        en flott jente, som har alle muligheter for dine føtter.
+                        Ønsker deg en minnerik og flott konfirmasjonsdag. Gode
+                        ønsker for framtiden med masse hell og lykke. Du er en
+                        flott jente, som har alle muligheter for dine føtter.
                     </p>
-                    <div className=' mt-6'>
-                        <Image src={AMM} alt='Amalie, Mia og Maylinn' />
+                    <div className=' flex justify-center mt-6'>
+                        <Image
+                            src={Maylinn}
+                            alt='Maylinn på karusell'
+                            height={500}
+                        />
                     </div>
+                    <Wisdom />
                 </section>
             </main>
         </>
