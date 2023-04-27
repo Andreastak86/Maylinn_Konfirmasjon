@@ -12,21 +12,32 @@ export default function Tale() {
         event.preventDefault();
         if (password === "tale") {
             setIsAuthorized(true);
+        } else {
+            alert("feil passord");
         }
     };
     return (
         <>
             {!isAuthorized && (
-                <form onSubmit={handlePasswordSubmit}>
-                    <label>
+                <form
+                    className=' flex flex-col items-center'
+                    onSubmit={handlePasswordSubmit}
+                >
+                    <label className=' flex flex-col items-center text-white'>
                         Password:
                         <input
+                            className=' bg-white border-2 border-pink-400 my-4 mx-2 text-black'
                             type='password'
                             value={password}
                             onChange={handlePasswordChange}
                         />
                     </label>
-                    <button type='submit'>Submit</button>
+                    <button
+                        className=' bg-pink-400 border-purple-600 border-2 rounded-md p-2 my-4'
+                        type='submit'
+                    >
+                        Submit
+                    </button>
                 </form>
             )}
             {isAuthorized && (
