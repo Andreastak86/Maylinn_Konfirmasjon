@@ -93,7 +93,7 @@ export default function Navbar() {
                                 <Link href='/tale'>Tale</Link>
                             </li>
                             <li className='font-semibold text-pink-300'>
-                                <Link href='/oneDir'>One Direction</Link>
+                                <Link href='/oneDir'>En retning</Link>
                             </li>
                         </ul>
                     </div>

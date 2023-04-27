@@ -29,9 +29,9 @@ export default function Home() {
                 </h1>
                 <section className=' text-center py-8 mx-4 text-white'>
                     <p>
-                        Ønsker deg en minnerik og flott konfirmasjonsdag. Gode
-                        ønsker for framtiden med masse hell og lykke. Du er en
-                        flott jente, som har alle muligheter for dine føtter.
+                        Vi ønsker deg en minnerik og flott konfirmasjonsdag.
+                        Gode ønsker for framtiden med masse hell og lykke. Du er
+                        en flott jente, som har alle muligheter for dine føtter.
                     </p>
                     <div className=' flex justify-center mt-6'>
                         <Image

@@ -1,33 +1,44 @@
 import { useState, useEffect } from "react";
 
-export default function Funny() {
-    const [activity, setActivity] = useState("");
+export default function CatPictures() {
+    const [pictureUrl, setPictureUrl] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState(null);
 
-    useEffect(() => {
-        fetchActivity();
-    }, []);
-
-    const fetchActivity = () => {
-        fetch("https://www.boredapi.com/api/activity/")
-            .then((response) => response.json())
-            .then((data) => {
-                setActivity(data.activity);
-            })
-            .catch((error) => console.error(error));
+    const fetchPicture = async () => {
+        setIsLoading(true);
+        try {
+            const response = await fetch("https://cataas.com/cat");
+            const picture = await response.url;
+            setPictureUrl(picture);
+        } catch (error) {
+            setError("An error occurred while fetching the data");
+        } finally {
+            setIsLoading(false);
+        }
     };
 
+    const handleClick = () => {
+        fetchPicture();
+    };
+
+    useEffect(() => {
+        fetchPicture();
+    }, []);
+
     return (
-        <div className=' text-white mx-auto flex flex-col justify-center  items-center align-middle'>
-            <h1 className=' text-[24px] py-5'>
-                Gå aldri tomt for ideer du kan gjøre!
+        <div className=' flex flex-col items-center'>
+            <h1 className=' text-white py-6 text-[20px]'>
+                Din daglige pusekatt
             </h1>
-            <p>Aktivitet:</p>
-            <p className=' py-4'>{activity}</p>
+            {isLoading && <p>Loading data...</p>}
+            {!isLoading && error && <p>{error}</p>}
+            {!isLoading && !error && <img src={pictureUrl} alt='A cat' />}
             <button
-                className=' border-2 border-pink-400 bg-pink-300 my-4'
-                onClick={fetchActivity}
+                className=' bg-pink-400 my-6 p-2 rounded-md'
+                onClick={handleClick}
             >
-                Gi meg en ny aktivitet
+                Get a new picture
             </button>
         </div>
     );

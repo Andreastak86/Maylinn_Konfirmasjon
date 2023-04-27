@@ -61,7 +61,7 @@ export default function Wisdom() {
                         og ta sjanser når det er nødvendig. Husk at de største
                         belønningene ofte kommer til de som våger.
                     </li>
-                    <li className='py-2'>
+                    <li className='pt-2 pb-16'>
                         <span className=' font-bold'>Elsk og bli elsket:</span>{" "}
                         Elsk deg selv og de rundt deg. Vær åpen for å motta
                         kjærlighet fra andre og gi kjærlighet tilbake. Livet er
