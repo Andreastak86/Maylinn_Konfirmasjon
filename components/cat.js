@@ -33,7 +33,9 @@ export default function CatPictures() {
             </h1>
             {isLoading && <p>Loading data...</p>}
             {!isLoading && error && <p>{error}</p>}
-            {!isLoading && !error && <img src={pictureUrl} alt='A cat' />}
+            {!isLoading && !error && (
+                <img src={pictureUrl} alt='A cat' height='300' width='300' />
+            )}
             <button
                 className=' bg-pink-400 my-6 p-2 rounded-md'
                 onClick={handleClick}
