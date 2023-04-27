@@ -1,7 +1,9 @@
 import { useState } from "react";
 
 const Dog = () => {
-    const [imageUrl, setImageUrl] = useState("");
+    const [imageUrl, setImageUrl] = useState(
+        "https://images.dog.ceo/breeds/airedale/n02096051_4868.jpg"
+    );
 
     const fetchNewDogImage = async () => {
         const response = await fetch("https://dog.ceo/api/breeds/image/random");
