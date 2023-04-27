@@ -1,10 +1,12 @@
 import React from "react";
-import Funny from "@/components/funny";
+import Cat from "@/components/cat";
+import Dog from "@/components/dog";
 
 export default function OneDirection() {
     return (
         <>
-            <Funny />
+            <Cat />
+            <Dog />
         </>
     );
 }

@@ -38,7 +38,7 @@ export default function CatPictures() {
                 className=' bg-pink-400 my-6 p-2 rounded-md'
                 onClick={handleClick}
             >
-                Get a new picture
+                Ny pusekatt
             </button>
         </div>
     );
