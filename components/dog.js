@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 
 const Dog = () => {
     const [imageUrl, setImageUrl] = useState(
@@ -16,7 +17,7 @@ const Dog = () => {
             <h1 className=' text-white py-6 text-[20px]'>
                 Eller hva med en hund?
             </h1>
-            <img src={imageUrl} alt='Dog' height='300' width='300' />
+            <Image src={imageUrl} alt='Dog' height='300' width='300' />
             <button
                 className=' bg-pink-400 my-6 p-2 rounded-md'
                 onClick={fetchNewDogImage}
