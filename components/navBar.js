@@ -90,6 +90,9 @@ export default function Navbar() {
                                 <Link href='/'>Hjem</Link>
                             </li>
                             <li className='font-semibold text-pink-300'>
+                                <Link href='/galleri'>Bilder</Link>
+                            </li>
+                            <li className='font-semibold text-pink-300'>
                                 <Link href='/tale'>Tale</Link>
                             </li>
                             <li className='font-semibold text-pink-300'>
