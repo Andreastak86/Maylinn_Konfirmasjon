@@ -37,7 +37,7 @@ export default function Home() {
                         <Image
                             src={Maylinn}
                             alt='Maylinn på karusell'
-                            height={500}
+                            width={320}
                         />
                     </div>
                     <Wisdom />
