@@ -54,6 +54,7 @@ const Gallery = () => {
         M13,
         M14,
         M15,
+        M16,
         M17,
         M18,
         M19,
