@@ -116,11 +116,11 @@ export default function Tale() {
                             en kjærlig storesøster, var også en du ønsket å
                             krangle med, få mest oppmerksomhet fra, men også som
                             var der som en støtte. Tante Lise kom inn i bildet
-                            da du var 2 år. Og gitt om hun var glad i deg. For
-                            hun ville jo alltid ha en baby. Og det ser
-                            resultatet av det nå sant? Du var “babyen” hennes
-                            fram til vi fikk din kusine Amalie. Det var alltid
-                            stas da vi fikk passe deg.
+                            da du var 7 måneder. Og gitt om hun var glad i deg.
+                            For hun ville jo alltid ha en baby. Og det ser vi
+                            resultatet av nå sant? Du var “babyen” hennes fram
+                            til vi fikk din kusine Amalie. Det var alltid stas
+                            da vi fikk passe deg.
                         </p>
                         <p className=' my-2'>
                             {" "}
