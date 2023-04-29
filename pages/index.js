@@ -6,6 +6,7 @@ import Wisdom from "@/components/wisdom";
 
 import AMM from "../img/AMM.png";
 import Maylinn from "../img/Maylinn1.jpg";
+import Barna from "../img/35m.jpg";
 
 export default function Home() {
     return (
@@ -33,12 +34,13 @@ export default function Home() {
                         Gode ønsker for framtiden med masse hell og lykke. Du er
                         en flott jente, som har alle muligheter for dine føtter.
                     </p>
-                    <div className=' flex justify-center mt-6'>
+                    <div className=' flex flex-col justify-center items-center mt-6 gap-6'>
                         <Image
                             src={Maylinn}
                             alt='Maylinn på karusell'
                             width={320}
                         />
+                        <Image src={Barna} alt='Se de barna' width={320} />
                     </div>
                     <Wisdom />
                 </section>

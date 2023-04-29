@@ -64,7 +64,7 @@ function CatPictures() {
 
     return (
         <div className=' flex flex-col items-center'>
-            <h1 className=' text-white py-6 text-[20px]'>Hva med en rev?</h1>
+            <h1 className=' text-white py-6 text-[20px]'>Hva med en rev ?</h1>
             <br />
             {foxImageUrl !== "" && (
                 <img height={300} width={300} src={foxImageUrl} alt='Fox' />

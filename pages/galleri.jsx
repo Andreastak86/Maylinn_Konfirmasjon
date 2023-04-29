@@ -35,6 +35,7 @@ import M31 from "../img/photo-lib/31m.jpg";
 import M32 from "../img/photo-lib/32m.jpg";
 import M33 from "../img/photo-lib/33m.jpg";
 import M34 from "../img/photo-lib/34m.jpg";
+import M35 from "../img/photo-lib/35m.jpg";
 
 const Gallery = () => {
     // Oppretter et array med URL-er til bildene
@@ -73,6 +74,7 @@ const Gallery = () => {
         M32,
         M33,
         M34,
+        M35,
     ];
 
     // Oppretter en state-variabel for å bestemme om et bilde er klikket på

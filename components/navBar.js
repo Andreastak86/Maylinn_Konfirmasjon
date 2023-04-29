@@ -29,7 +29,7 @@ export default function Navbar() {
                                 alt='Maylinn sin logo'
                             />
                         </div>
-                        <p className='hidden ml-4 text-lg  md:block'>
+                        <p className='hidden ml-4 text-lg  text-pink-400 font-bold md:block'>
                             Konfirmasjon
                         </p>
                     </Link>

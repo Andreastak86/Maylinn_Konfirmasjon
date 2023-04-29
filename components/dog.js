@@ -15,7 +15,7 @@ const Dog = () => {
     return (
         <div className=' flex flex-col items-center'>
             <h1 className=' text-white py-6 text-[20px]'>
-                Eller hva med en hund?
+                Eller kanskje en hund ?
             </h1>
             <Image src={imageUrl} alt='Dog' height='300' width='300' />
             <button
