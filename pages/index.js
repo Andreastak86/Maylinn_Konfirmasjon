@@ -13,7 +13,7 @@ export default function Home() {
         <>
             <Head>
                 <title>Maylinn sin konfirmasjon</title>
-                <meta name='description' content='Gratulerer med dagen' />
+                <meta name='Maylin' content='Gratulerer med dagen' />
                 <meta
                     name='viewport'
                     content='width=device-width, initial-scale=1'
